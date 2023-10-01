@@ -21,4 +21,5 @@
     <string name="summary_sobrepeso_bajo">Te encuentras por encima de lo óptimo para tu peso y estatura.</string>
     <string name="title_obecidad">Obecidad</string>
     <string name="summary_obecidad">Te encuentras MUY por encima de lo óptimo para tu peso y estatura.</string>
+    <string name="init_message">Este espacio esta reservado para proximas MiniApp`s que vaya creando durante mi aprendizaje.</string>
 </resources>

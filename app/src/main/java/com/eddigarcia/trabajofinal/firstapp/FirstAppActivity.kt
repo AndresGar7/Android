@@ -1,15 +1,15 @@
 package com.eddigarcia.trabajofinal.firstapp
-
+// Cargo las librerias necesarias
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import com.eddigarcia.trabajofinal.R
 
 class FirstAppActivity : AppCompatActivity() {
 
+    // Inicializo los metodos que voy a utilizar al iniciar el FirstApp
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_app)
