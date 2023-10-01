@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2023.
+ *
+ * Project Name: Trabajo Final
+ * Created by Eddi Andres Garcia
+ * Copyright (c) 2023. All rights reserved.
+ * Last modified 1/10/23 23:05
+ */
+
 package com.eddigarcia.trabajofinal
 
 import android.content.Intent
