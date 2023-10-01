@@ -31,6 +31,13 @@
         android:layout_marginHorizontal="10dp"
         android:text="IMC App" />
 
+    <Button
+        android:id="@+id/btnHeroesApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="Super Heroes App" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
