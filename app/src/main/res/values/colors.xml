@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background_app">#311B92</color>
+    <color name="background_button">#009688</color>
+    <color name="background_component">#448AFF</color>
+    <color name="background_component_selected">#3D5AFE</color>
+    <color name="titleText">#000000</color>
+    <color name="background_component_male">#448AAF</color>
+    <color name="purple_200_male">#7C7C7C</color>
+
+    <color name="bajo_peso">#FFEA00</color>
+    <color name="normal_peso">#00E676</color>
+    <color name="sobre_peso">#FF9100</color>
+    <color name="obecidad">#FF0031</color>
+</resources>
