@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import com.eddigarcia.trabajofinal.MenuActivity
 import com.eddigarcia.trabajofinal.R
-
+// estoy ensayando esto del git
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
