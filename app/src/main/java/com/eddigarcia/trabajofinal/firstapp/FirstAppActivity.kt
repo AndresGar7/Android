@@ -18,7 +18,9 @@ import com.eddigarcia.trabajofinal.R
 
 class FirstAppActivity : AppCompatActivity() {
 
-    // Inicializo los metodos que voy a utilizar al iniciar el FirstApp
+    /* Inicializo los metodos que voy a utilizar al iniciar el FirstApp y tambien
+    *  me encargo de comprobar y enviar si se encuentra algo escrito.
+    * */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_app)

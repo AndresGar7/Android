@@ -6,7 +6,7 @@
   ~ Copyright (c) 2023. All rights reserved.
   ~ Last modified 1/10/23 23:05
   -->
-
+<!-- ESTE ES EL LISTAD DE LAS PALABRAS QUE VOY A UTILIZAR EN MI APP TRABAJO FINAL -->
 <resources>
     <string name="app_name">Trabajo Final</string>
     <string name="pulsame">Pulsame</string>
@@ -31,4 +31,8 @@
     <string name="title_obecidad">Obecidad</string>
     <string name="summary_obecidad">Te encuentras MUY por encima de lo óptimo para tu peso y estatura.</string>
     <string name="init_message">Este espacio esta reservado para proximas MiniApp`s que vaya creando durante mi aprendizaje.</string>
+    <string name="saludo_app">Saludo App</string>
+    <string name="imc_app">IMC App</string>
+    <string name="heroes_app">Super Heroes App</string>
+    <string name="init_cm">120 cm</string>
 </resources>

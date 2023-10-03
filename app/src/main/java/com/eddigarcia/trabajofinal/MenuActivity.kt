@@ -14,9 +14,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.eddigarcia.trabajofinal.firstapp.FirstAppActivity
-import com.eddigarcia.trabajofinal.heroes.HeroesAppActivity
+import com.eddigarcia.trabajofinal.heroesapp.HeroesAppActivity
 import com.eddigarcia.trabajofinal.imccalculatorapp.ImcCalculatorAppActivity
-
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,17 +31,20 @@ class MenuActivity : AppCompatActivity() {
         btnHeroesApp.setOnClickListener { navigateToHeroesApp() }
     }
 
+    // Metodo encargado de mostrar la vista del Saludo App
     private fun navigateToSaludoApp() {
         val intent = Intent(this, FirstAppActivity::class.java)
         startActivity(intent)
 
     }
 
+    // Metodo encargado de mostrar la vista del IMC App
     private fun navigateToIMCApp() {
         val intent = Intent(this, ImcCalculatorAppActivity::class.java)
         startActivity(intent)
     }
 
+    // Metodo encargado de mostrar la vista del Heroes App
     private fun navigateToHeroesApp() {
         val intent = Intent(this, HeroesAppActivity::class.java)
         startActivity(intent)

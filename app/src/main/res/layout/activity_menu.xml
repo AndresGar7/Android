@@ -9,42 +9,44 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MenuActivity">
 
     <Button
         android:id="@+id/btnSaludoApp"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:text="Saludo App" />
+        android:text="@string/saludo_app" />
 
     <Button
         android:id="@+id/btnIMCApp"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginHorizontal="10dp"
-        android:text="IMC App" />
+        android:text="@string/imc_app" />
 
     <Button
         android:id="@+id/btnHeroesApp"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginHorizontal="10dp"
-        android:text="Super Heroes App" />
+        android:text="@string/heroes_app" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:padding="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
         android:text="@string/init_message"
-        android:textSize="50sp" />
+        android:textSize="40sp" />
 
 </LinearLayout>

@@ -16,7 +16,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
+    <!-- IMC APP -->
     <color name="background_app">#311B92</color>
     <color name="background_button">#009688</color>
     <color name="background_component">#448AFF</color>
@@ -24,9 +24,10 @@
     <color name="titleText">#000000</color>
     <color name="background_component_male">#448AAF</color>
     <color name="purple_200_male">#7C7C7C</color>
-
     <color name="bajo_peso">#FFEA00</color>
     <color name="normal_peso">#00E676</color>
     <color name="sobre_peso">#FF9100</color>
     <color name="obecidad">#FF0031</color>
+    <!-- Heroes App -->
+    <color name="hero_name">#A3FF9800</color>
 </resources>
