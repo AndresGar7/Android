@@ -14,7 +14,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.eddigarcia.trabajofinal.R
 
-class HeroAdapter(var heroesList:List<HeroItemResponse> = emptyList()) :
+class HeroAdapter(var heroesList:List<HeroItemResponse> = emptyList(),
+                  private val onItemSelected:(String) -> Unit
+) :
     RecyclerView.Adapter<HeroViewHolder>() {
 
     /** Metodo que se encarga de poblar el listado de Heroes */
@@ -23,7 +25,7 @@ class HeroAdapter(var heroesList:List<HeroItemResponse> = emptyList()) :
         notifyDataSetChanged()
     }
 
-    /** Genero la vista en donde voy a mostrar los resultados cuando se obtenga el ID del Heroe */
+    /** En esta parte genero la vista en donde voy a mostrar los resultados cuando se obtenga el ID del Heroe */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HeroViewHolder {
         return HeroViewHolder(
             LayoutInflater.from(parent.context)
@@ -36,7 +38,7 @@ class HeroAdapter(var heroesList:List<HeroItemResponse> = emptyList()) :
 
     /** Metodo encargado se seleccionar el Heroe */
     override fun onBindViewHolder(viewHolder: HeroViewHolder, position: Int) {
-        viewHolder.bind(heroesList[position])
+        viewHolder.bind(heroesList[position], onItemSelected)
     }
 
 }

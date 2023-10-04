@@ -9,6 +9,7 @@
 
 package com.eddigarcia.trabajofinal.heroesapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,6 +17,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.eddigarcia.trabajofinal.databinding.ActivityHeroesAppBinding
+import com.eddigarcia.trabajofinal.heroesapp.DetailsHeroActivity.Companion.EXTRA_HERO_ID
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -36,6 +38,7 @@ class HeroesAppActivity : AppCompatActivity() {
         startUI()
     }
 
+    /** Metodo encargado de iniciar con Binding lo que se realizaba anteriormente con startComponents */
     private fun startUI() {
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -46,7 +49,10 @@ class HeroesAppActivity : AppCompatActivity() {
             override fun onQueryTextChange(newText: String?): Boolean { return false }
         })
 
-        adapter = HeroAdapter()
+        /** Cargo la variables con los datos de la busqueda de la Api Principal y luego
+         * poder pasar estos datos a la siguiente Api de Detalle*/
+
+        adapter = HeroAdapter{ heroId -> navigateToDetailHero(heroId)}
         binding.rvSearchHero.setHasFixedSize(true)
         binding.rvSearchHero.layoutManager = LinearLayoutManager(this)
         binding.rvSearchHero.adapter = adapter
@@ -60,7 +66,6 @@ class HeroesAppActivity : AppCompatActivity() {
             if (myResponse.isSuccessful){
                 val response: HeroDataResponse? = myResponse.body()
                 if (response != null) {
-                    Log.i("GARCIA", "funciona :)")
                     runOnUiThread {
                         adapter.updateList(response.heroes)
                         binding.proBar.isVisible = false
@@ -79,5 +84,12 @@ class HeroesAppActivity : AppCompatActivity() {
             .baseUrl("https://superheroapi.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+    }
+
+    /** Metodo para poder navegar hacia mi otra pantalla de Detalles de los Heroes */
+    private fun navigateToDetailHero(id: String) {
+        val intent = Intent(this,DetailsHeroActivity::class.java)
+        intent.putExtra(EXTRA_HERO_ID,id)
+        startActivity(intent)
     }
 }

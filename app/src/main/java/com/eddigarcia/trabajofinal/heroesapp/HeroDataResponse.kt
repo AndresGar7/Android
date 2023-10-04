@@ -20,14 +20,7 @@ data class HeroItemResponse(
     @SerializedName("id") val heroId: String,
     @SerializedName("name") val name: String,
     @SerializedName("image") val heroImage:HeroImageResponse,
-    @SerializedName("work") val heroBiografy:HeroWorkResponse,
 )
 
-// Con esta clase Obtengo el valor de la URL de la Imagen.
+/** Con esta clase Obtengo el valor de la URL de la Imagen. */
 data class HeroImageResponse(@SerializedName("url") val url:String)
-
-/** Con esto clase obtengo los valores del work del  Heroe */
-data class HeroWorkResponse(
-    @SerializedName("occupation") val work:String,
-    @SerializedName("base") val ciudad:String
-)

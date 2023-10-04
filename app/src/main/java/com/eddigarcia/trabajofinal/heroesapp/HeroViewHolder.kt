@@ -17,10 +17,11 @@ import com.squareup.picasso.Picasso
 class HeroViewHolder(view: View): RecyclerView.ViewHolder (view){
 
     private val  binding = OnlyOneHeroBinding.bind(view)
-    fun bind(HeroItemResponse: HeroItemResponse){
-        binding.tvHeroName.text = HeroItemResponse.name
-        binding.imgHero
-
-        Picasso.get().load(HeroItemResponse.heroImage.url).into(binding.imgHero)
+    /** Con este Metodo me encargo de encapsular y pasar los datos
+     * que trae la Api a la siguiente vista */
+    fun bind(heroItemResponse: HeroItemResponse, onItemSelected: (String) -> Unit){
+        binding.tvHeroName.text = heroItemResponse.name
+        Picasso.get().load(heroItemResponse.heroImage.url).into(binding.imgHero)
+        binding.root.setOnClickListener { onItemSelected(heroItemResponse.heroId) }
     }
 }
