@@ -16,7 +16,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <!-- IMC APP -->
+    <!-- Colors IMC APP -->
     <color name="background_app">#311B92</color>
     <color name="background_button">#009688</color>
     <color name="background_component">#448AFF</color>
@@ -28,6 +28,12 @@
     <color name="normal_peso">#00E676</color>
     <color name="sobre_peso">#FF9100</color>
     <color name="obecidad">#FF0031</color>
-    <!-- Heroes App -->
+    <!-- Colors Heroes App -->
     <color name="hero_name">#A3FF9800</color>
+    <color name="hero_intellingence">#64DD17</color>
+    <color name="hero_strength">#43423D</color>
+    <color name="hero_speed">#FFD600</color>
+    <color name="hero_durability">#2962FF</color>
+    <color name="hero_power">#FF6D00</color>
+    <color name="hero_combat">#D50000</color>
 </resources>

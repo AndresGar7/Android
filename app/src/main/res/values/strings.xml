@@ -8,8 +8,11 @@
   -->
 <!-- ESTE ES EL LISTAD DE LAS PALABRAS QUE VOY A UTILIZAR EN MI APP TRABAJO FINAL -->
 <resources>
+    <!-- Palabras para Saludo App -->
     <string name="app_name">Trabajo Final</string>
     <string name="pulsame">Pulsame</string>
+
+    <!-- Palabras para IMC App -->
     <string name="regresar">Regresar</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
@@ -35,4 +38,17 @@
     <string name="imc_app">IMC App</string>
     <string name="heroes_app">Super Heroes App</string>
     <string name="init_cm">120 cm</string>
+
+    <!-- Palabras para Heroes App -->
+    <string name="intelligence">Inteligencia</string>
+    <string name="strength">Fortaleza</string>
+    <string name="speed">Velocidad</string>
+    <string name="durability">Durabilidad</string>
+    <string name="power">Fuerza</string>
+    <string name="combat">Combate</string>
+    <string name="real_name">Nombre real:</string>
+    <string name="hero_publisher">Editorial:</string>
+    <string name="hero_ocupation">Ocupación:</string>
+    <string name="hero_base">Ciudad:</string>
+    <string name="hero_birth">Lugar de nacimiento:</string>
 </resources>

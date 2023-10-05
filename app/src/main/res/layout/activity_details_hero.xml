@@ -13,6 +13,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/hero_back"
+    android:background="@color/black"
     tools:context=".heroesapp.DetailsHeroActivity">
 
     <ImageView
@@ -37,21 +39,280 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/tvHeroNameDetail"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:textSize="28sp"
-                tools:text="PRUEBA"
+                tools:text="Probando"
                 android:gravity="center_horizontal"
                 android:textColor="@color/black"
                 android:textStyle="bold"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="35dp"
+                android:gravity="bottom"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/vIntelligence"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/hero_intellingence"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/vStrength"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/hero_strength"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/vSpeed"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/hero_speed"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/vDurability"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/hero_durability"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/vPower"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/hero_power"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:id="@+id/vCombat"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/hero_combat"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="@string/intelligence"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="@string/strength"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="@string/speed"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="@string/durability"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="@string/power"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="@string/combat"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/real_name"
+                    tools:text="Probando:"/>
+
+                <TextView
+                    android:id="@+id/tvRealName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    tools:text="Esto es una prueba"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/hero_base"
+                    tools:text="Probando:"/>
+
+                <TextView
+                    android:id="@+id/tvBase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    tools:text="Esto es una prueba"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/hero_ocupation"
+                    tools:text="Probando:"/>
+
+                <TextView
+                    android:id="@+id/tvOcupacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    tools:text="Esto es una prueba"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/hero_publisher"
+                    tools:text="Probando:"/>
+
+                <TextView
+                    android:id="@+id/tvPublisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    tools:text="Esto es una prueba"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/hero_birth"
+                    tools:text="Probando:"/>
+
+                <TextView
+                    android:id="@+id/tvBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    tools:text="Esto es una prueba"/>
+            </LinearLayout>
+
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
 
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
