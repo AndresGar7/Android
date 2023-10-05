@@ -1,5 +1,13 @@
-package com.eddigarcia.trabajofinal.heroesapp
+/*
+ * Copyright (c) 2023.
+ *
+ * Project name: Trabajo Final
+ * Created by Eddi Andres Garcia
+ * Copyright (c) 2023. All rights reserved.
+ * Last modified 3/10/23 17:00
+ */
 
+package com.eddigarcia.trabajofinal.heroesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

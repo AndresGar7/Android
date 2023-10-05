@@ -21,5 +21,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
     </style>
 </resources>

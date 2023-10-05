@@ -53,6 +53,7 @@ class HeroesAppActivity : AppCompatActivity() {
          * poder pasar estos datos a la siguiente Api de Detalle*/
 
         adapter = HeroAdapter{ heroId -> navigateToDetailHero(heroId)}
+        binding.searchView.queryHint = "Buscar Super Heroe"
         binding.rvSearchHero.setHasFixedSize(true)
         binding.rvSearchHero.layoutManager = LinearLayoutManager(this)
         binding.rvSearchHero.adapter = adapter

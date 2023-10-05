@@ -31,7 +31,7 @@
     <!-- Colors Heroes App -->
     <color name="hero_name">#A3FF9800</color>
     <color name="hero_intellingence">#64DD17</color>
-    <color name="hero_strength">#43423D</color>
+    <color name="hero_strength">#574063</color>
     <color name="hero_speed">#FFD600</color>
     <color name="hero_durability">#2962FF</color>
     <color name="hero_power">#FF6D00</color>
